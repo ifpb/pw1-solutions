@@ -8,7 +8,7 @@ describe('Circle Tools', function () {
     expect(round(areaOfCircle(1), 3))->toEqual(round(3.1415926535898, 3));
   });
 
-  xit('Area of the circle of radius 10 is of 314.15926535898', function () {
+  it('Area of the circle of radius 10 is of 314.15926535898', function () {
     expect(round(areaOfCircle(10), 3))->toEqual(round(314.15926535898, 3));
   });
 });
