@@ -25,7 +25,7 @@ class DAOPokeTrainer {
     $sql = "SELECT * FROM Pokemon_Trainer WHERE id_trainer = '${id_trainer}';";
     try {
       $pdoStm = $connection->query($sql);
-      return $pdoStm ? $pdoStm->fetchAll(PDO::FETCH_ASSOC)[0] : null;
+      return $pdoStm ? $pdoStm->fetchAll(PDO::FETCH_ASSOC) : null;
     } catch(PDOExecption $e) { 
       $connection->rollback(); 
       print "Error!: " . $e->getMessage(); 

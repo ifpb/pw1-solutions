@@ -13,8 +13,9 @@ function createCard($arr, $pokeids) : string {
 
     $html .= "<div class='index-card-min-poke'>";
 
+
     foreach($pokeids as $pokeid) {
-        $src = DAOImage::get_min_img($pokeid);
+        $src = DAOImage::get_min_img($pokeid['id_pokemon']);
         $html .= "<div>
                     <img src='$src' />
                 </div>";

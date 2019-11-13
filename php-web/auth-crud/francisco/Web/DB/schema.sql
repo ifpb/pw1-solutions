@@ -1,6 +1,6 @@
+DROP TABLE IF EXISTS Pokemon_Trainer;
 DROP TABLE IF EXISTS Trainer;
 DROP TABLE IF EXISTS Pokemon;
-DROP TABLE IF EXISTS Pokemon_Trainer;
 
 -- CREATE TYPE gen AS ENUM ('F', 'M');
 
@@ -22,7 +22,7 @@ CREATE TABLE Pokemon (
 	defesa		int NOT NULL,
 	spAtaque	int NOT NULL,
 	spDefesa	int NOT NULL,
-	velocidade	int NOT NULL
+	velocidade	int NOT NULL,
   	min_img     bytea,
 	max_img     bytea,
 	gray_img    bytea
