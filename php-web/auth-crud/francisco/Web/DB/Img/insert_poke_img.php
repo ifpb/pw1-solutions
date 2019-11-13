@@ -21,8 +21,6 @@ foreach($arr as $poke) {
     $gray_data = file_get_contents($gray);
     $gray_escaped = bin2hex($gray_data);
 
-    
-
     $min = './min/'.$poke['id'].'.png';
     $data = file_get_contents($min);
     $min_escaped = bin2hex($data);
