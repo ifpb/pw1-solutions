@@ -1,4 +1,8 @@
 /vendor
 composer.json
+<<<<<<< HEAD
 composer.lock
 **/.DS_Store
+=======
+composer.lock
+>>>>>>> f61fdca76ccd589c93fd308b6425aaa4eb519aa4
