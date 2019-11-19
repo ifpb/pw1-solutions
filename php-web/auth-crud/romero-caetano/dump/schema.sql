@@ -25,9 +25,5 @@ CREATE TABLE `users` (
 INSERT INTO `users`
   (`name`, `password`)
 VALUES
-  ('Romero', '12345');
-
-INSERT INTO `users`
-  (`name`, `password`)
-VALUES
+  ('Romero', '12345'),
   ('Luanna', '12345');
