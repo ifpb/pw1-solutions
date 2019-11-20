@@ -31,7 +31,7 @@ class Database {
   
     $sql = "UPDATE host
             SET name='${name}', address='${address}'
-            WHERE id=${id};";
+            WHERE id = ${id};";
   
     try {
       return $this->connection->exec($sql);
@@ -43,7 +43,7 @@ class Database {
 
   public function delete($id) {
   
-    $sql = "DELETE FROM host WHERE id=${id};";
+    $sql = "DELETE FROM host WHERE id = ${id};";
   
     try {
       return $this->connection->exec($sql);
@@ -95,7 +95,7 @@ class Database {
   }
   
   public function readByUsername($name) {
-    $sql = "SELECT password FROM users WHERE name='${name}'";
+    $sql = "SELECT password FROM users WHERE name = '${name}'";
     $resposta = $this->connection->query($sql);
     if($resposta){
       return $resposta->fetch(PDO::FETCH_ASSOC);
